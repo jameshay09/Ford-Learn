@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: radial-gradient(#001f3e, #003366);
+	width:100%;
+	height:100VH;
+	overflow:hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#container{
+	width:50%;
+	height:80vh;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	padding-top:7%;
+	font-family: 'Raleway', sans-serif;
+}
+
+#logo{
+	width:28%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:5%;
+}
+
+
+	
+	.quest-link{
+		font-family: 'Raleway', sans-serif;
+		font-size:24px;
+		color:#fff;
+		text-decoration:none;
+	}
+	
+	.one:hover{
+		text-decoration:underline;
+		color:#CCC;
+		cursor:pointer;
+	}
+	
+	.two:hover{
+		text-decoration:underline;
+		color:#CCC;
+		cursor:pointer;
+	}
+	
+	.three:hover{
+		text-decoration:underline;
+		color:#CCC;
+		cursor:pointer;
+	}
+	
+	
+	.four:hover{
+		text-decoration:underline;
+		color:#CCC;
+		cursor:pointer;
+	}
+	
+	
+	.five:hover{
+		text-decoration:underline;
+		color:#CCC;
+		cursor:pointer;
+	}
+	
+	
+	.six:hover{
+		text-decoration:underline;
+		color:#CCC;
+		cursor:pointer;
+	}
+	
+	.seven:hover{
+		text-decoration:underline;
+		color:#CCC;
+		cursor:pointer;
+	}
+	
+	.back{
+		width:5%;
+		height:5px;
+		top:0;
+		right:0;
+		position:absolute;
+		margin-top:5%;
+		margin-right:10%;
+		
+		
+		
+	}
+	
+	.back-link{
+		color:#fff;
+		text-decoration:none;
+		font-family: 'Raleway', sans-serif;
+		font-size:24px;
+	}
+	
+	.back-link:hover{
+		color:#CCC;
+		text-decoration:underline;
+	}
+	
+	#content{
+	}
+	
+	h5{
+		font-family: 'Raleway', sans-serif;
+		text-decoration:underline;
+		font-size:22px;
+		color:#fff;
+	}
+	
+	.q1 h5{
+		margin-left:23%;
+	}
+	
+	
+	.q2 h5{
+		margin-left:34%;
+	}
+	
+	.q3 h5{
+		margin-left:29%;
+	}
+	
+	.q4 h5{
+		margin-left:34%;
+	}
+	
+	.q5 h5{
+		margin-left:29%;
+	}
+	
+	.q6 h5{
+		margin-left:15%;
+	}
+	
+	.q7 h5{
+		margin-left:5%;
+	}
+	
+.overlay{
+	position:fixed;
+	top:30%;
+	left:25%;
+	width:50%;
+	height:400px;
+	background-color:rgba(0,51,102,0.8);
+	opacity:0.9;
+	display:none;
+}
+
+.close{
+	position:absolute;
+	top:0;
+	right:0;
+	margin-right:2%;
+	cursor:pointer;
+}
+
+.answer{
+	font-size:36px;
+	color:#000;
+	margin-left:2%;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+p{
+	font-size:18px;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.close p{
+	color:#fff;
+	font-size:24px;
+}
+
+
+
+.close p:hover{
+	color:#CCC;
+}
+
+
+
+
+@media (max-width:1280px){
+	#container{
+		padding-top:3%;
+	}
+	
+}
+
+
+@media (max-width:1152px){
+	
+	#container{
+		padding-top:5%;
+	}
+	
+	.ford-logo{
+		max-width:100%;
+		height:auto;
+	}
+	
+}
