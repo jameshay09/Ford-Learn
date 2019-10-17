@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ford Learn - Practice Restults</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="logo-small">
+	<a href="index.html"><img src="img/ford-logo-small.png" alt="ford logo image"></a>
+</div>
+
+<div id="practice-title">
+
+	<h2>Drive Results</h2>
+
+</div>
+
+<div class="back">
+	<a class="back-link" href="index.html">Back Home</a>
+</div>
+
+
+
+<div id="drive-results">
+	<h3>Drive Time: 20:36</h3>
+    <br />
+    <h3>Drive Length: 15 Miles</h3>
+    <br />
+    <h3>minors used: </h3><h3 class="green"> 2/15</h3>
+	
+
+</div>
+
+
+
+ <p class="xmltxt2" onclick="load2()"> Car Condition </p>
+
+     
+        <div class="box2">
+        
+            <h1 class="xmltitle2"> Condition Of Your Car: </h1>
+    
+            <table id="results2"></table>
+       				
+		</div>
+
+
+
+ <script src="jquery-3.1.1.js">
+</script>
+<script src="js/xml_script.js">
+</script>
+
+
+
+	<script>
+function load2() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      myFunction(xhttp);
+    }
+  };
+  xhttp.open("GET", "car-info2.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var tableOne="<tr><th><b>Your car is:</b></th></tr>";
+  var tableTwo="<tr><th><b>Amount in car:<b></th></tr>";
+  var tableThree="<tr><th><b>Your have used:</b></th></tr>";
+  var tableFour="<tr><th><b>Your fuel is:</b></th></tr>";
+  var tableFive="<tr><th><b>The Car Condition:</b></th></tr>";
+  var x = xmlDoc.getElementsByTagName("INFO");
+  for (i = 0; i <x.length; i++) { 
+    
+    tableOne += "<tr><td>" +
+    x[i].getElementsByTagName("THECAR")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+   
+    tableTwo += "<tr><td>" +
+	x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue 
+    "</td><td> "
+    
+    tableThree += "<tr><td>" +
+	x[i].getElementsByTagName("USED")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+    
+    tableFour += "<tr><td>" +
+	x[i].getElementsByTagName("FUEL")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+    
+    tableFive += "<tr><td>" +
+	x[i].getElementsByTagName("CONDITION")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+    
+  }
+  document.getElementById("results2").innerHTML = tableOne + tableTwo+ tableThree + tableFour + tableFive;
+}
+</script>
+
+
+<div id="view-map">
+<a href="drive-map.html"><h4>View Map</h4></a>
+</div>
+
+
+
+</body>
+</html>

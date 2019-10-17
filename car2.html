@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+<button type="button" onclick="loadDoc()">My Car Details</button>
+<br />
+<table id="results"></table>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      myFunction(xhttp);
+    }
+  };
+  xhttp.open("GET", "car-info2.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var tableOne="<tr><th><b>Your car is</b></th></tr>";
+  var tableTwo="<tr><th><b>Amount in car:<b></th></tr>";
+  var tableThree="<tr><th><b>Your have used:</b> </th></tr>";
+  var tableFour="<tr><th><b>Your fuel is </b></th></tr>";
+  var tableFive="<tr><th><b>The Condition:</b></th></tr>";
+  var x = xmlDoc.getElementsByTagName("INFO");
+  for (i = 0; i <x.length; i++) { 
+    
+    tableOne += "<tr><td>" +
+    x[i].getElementsByTagName("THECAR")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+   
+    tableTwo += "<tr><td>" +
+	x[i].getElementsByTagName("AMOUNT")[0].childNodes[0].nodeValue 
+    "</td><td> "
+    
+    tableThree += "<tr><td>" +
+	x[i].getElementsByTagName("USED")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+    
+    tableFour += "<tr><td>" +
+	x[i].getElementsByTagName("FUEL")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+    
+    tableFive += "<tr><td>" +
+	x[i].getElementsByTagName("CONDITION")[0].childNodes[0].nodeValue 
+    "</td><td>" 
+    
+  }
+  document.getElementById("results2").innerHTML = tableOne + tableTwo+ tableThree + tableFour + tableFive;
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>

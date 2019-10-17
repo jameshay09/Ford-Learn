@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="height=device-height, initial-scale=1">
+<title>Ford learn - Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<div id="rss-popout">
+    
+    <div class="close">
+    <img src="img/close.png" alt="close icon"/>
+    </div>
+    
+  <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="?widget_parameter=%7B%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2Fwww.britannia-driving-school.com%2Fcategory%2Fnews-blogs%2F%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A0%2C%22height_by_article%22%3A%223%22%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Geneva%2C%20Arial%2C%20sans-serif%22%2C%22title_font_size%22%3A%2216%22%2C%22item_title_font_size%22%3A%2217%22%2C%22item_description_font_size%22%3A%2212%22%2C%22border%22%3A%22off%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22text_alignment%22%3A%22center%22%2C%22corner%22%3A%22square%22%2C%22scroll%22%3A%22on%22%2C%22auto_scroll%22%3A%22on%22%2C%22auto_scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%224%22%2C%22auto_scroll_mc_speed%22%3A%2230%22%2C%22sort%22%3A%22new%22%2C%22title%22%3A%22off%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%23505659%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%23ffffff%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_description%22%3A%22both%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%22500%22%2C%22item_description_color%22%3A%22%23ffffff%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25e.%25m.%25Y%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22Europe%2FLondon%22%2C%22item_description_style%22%3A%22thumbnail%22%2C%22item_thumbnail%22%3A%22full%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%2215%22%2C%22item_player%22%3A%22youtube%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D"></script> <!-- end feedwind code -->
+    
+    	
+    
+    </div>
+
+	
+
+	<div id="rss">
+    <img src="img/rss-icon.png" alt="rss icon link" />
+    </div>
+    
+    	<img class="logo" src="img/home-logo.png" alt="image of ford logo" />
+ 
+    
+    
+        <div id="need-help">
+        	<img class="xmltxt" onclick="loadDoc()" src="img/information.png" alt="info icon" />
+            <a class="help-link" href="help.html">Need Help?</a>
+        </div>
+        
+         <div id="box">
+        
+        <h1 class="xmltitle"> Your Car Information: </h1>
+
+        <table id="results"></table>
+       				
+		</div>
+        
+     <div id="box-container">
+        
+        <a href="practice-test.html" >
+        <div class="box">
+        	<img class="icons" src="img/l.png" alt="image of Learning driver icon" />       	
+        </div>
+        </a>
+        
+        
+        <a href="theory-test.html" >
+        <div class="box">
+        	<img class="icons" src="img/info.png" alt="image of question mark" />
+        </div>
+        </a>
+        
+    	 <a href="drive-mode.html" >
+        <div class="box">
+        	<img class="icons" src="img/compass.png" alt="image of gps icon" />
+        </div>
+    	</a>
+        
+	</div>    
+    
+    <div id="text-container">
+        
+        <div class="text">
+        <a class="home-link" href="practice-test.html" ><h1>Practice Test</h1></a>
+        </div>
+        
+        <div class="text">
+         <a class="home-link" href="theory-test.html" ><h1>Practice Theory</h1></a>
+        </div>
+    
+        <div class="text">
+        <a class="home-link" href="drive-mode.html" ><h1>Drive Mode</h1> </a>
+           
+        </div>
+    
+    
+    
+    </div>
+    
+    
+
+
+
+
+
+
+
+<script src="jquery-3.1.1.js"></script>
+<script>
+	$(document).ready(function() {
+		
+		$("#rss").click(function(){
+			$("#rss-popout").fadeIn(500);
+			$("#logo-home").fadeTo(0.7);
+			
+        });
+		
+		$(".close").click(function(){
+			$("#rss-popout").fadeOut(500)
+			
+			
+        });
+		
+		
+		
+		
+    });
+	
+	
+	</script>
+    <script src="js/xml_script.js">
+</script>
+    <script>
+	function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      myFunction(xhttp);
+    }
+  };
+  xhttp.open("GET", "car-info.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Make :</th><th>Model :</th><th>Capacity :</th><th>H-Power :</th><th>The Fuel :</th><th>Year :</th></tr>";
+  var x = xmlDoc.getElementsByTagName("INFO");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("CAR")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+	x[i].getElementsByTagName("MODEL")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+	x[i].getElementsByTagName("CC")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+	x[i].getElementsByTagName("BHP")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+	x[i].getElementsByTagName("FUEL")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("results").innerHTML = table;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CATALOG>
+	<INFO>
+		<THECAR>Ford</THECAR>
+		<AMOUNT>91% fuel left</AMOUNT>
+		<USED>5% of fuel</USED>
+		<FUEL>Diesel</FUEL>
+		<CONDITION>Good</CONDITION>
+     </INFO>
+</CATALOG>

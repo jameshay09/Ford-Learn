@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+
+<script src="jquery-3.1.1.js"></script>
+<script src="js/theory-script.js"> </script>
+
+<meta charset="utf-8">
+<title>Ford Learn - Practice Theory</title>
+
+
+<link href="css/theory.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+</head>
+
+<body>
+	
+    <div class="Ford_Icon">
+    	<a href="index.html"><img class="fordimg" src="img/ford-logo-small.png" alt=""></a>
+    </div>
+    
+    <div class="back">
+	<a class="back-link" href="index.html">Back Home</a>
+	</div>
+
+    
+    <p class="TheoryTest_titletxt"><u> Theory Test </u></p>
+    
+    <p class="TheoryQuestion_txt1"> You are driving in the left-hand lane of a motorway. Traffic is approaching from the slip lane. You should: </p>
+    <p class="TheoryQuestion_txt2"> What is the national speed limit for the outside lane of a motorway? </p>
+   <p class="TheoryQuestion_txt3"> Excessive or an uneven tyre wear can be caused by faults in the? </p>
+    <p class="TheoryQuestion_txt4"> You are waiting to emerge at a junction but parked vehicles are restricting 
+your view. What can you do to help yourself see? </p>
+    <p class="TheoryQuestion_txt5"> While driving behind a vehicle on a road that is slippery and wet, how large of a gap should you leave between that vehicle and yours? </p>
+    <p class="hazardQuestion_txt1"> Use your finger to pause the video when you think you have seen a potentiol hazard for the driver. then unpause the video to see what other hazards appear. </p>
+    
+ 		 <div class="q-one">
+       		<div class="q-container">
+                <div class="q1">
+                	<p class="q1txt">Slow Down</p>
+                </div>
+                <div class="q1">
+                	<p onClick="onClick()" class="q1txt">Stay At The Same Speed</p>
+                </div>
+                <div class="q1">
+                	<p class="q1txt">Move In To Another Lane</p>
+                </div>
+            </div>
+        </div>
+		<div class="q-two">
+       		<div class="q-container">
+                <div class="q2">
+                	<p class="q2txt">50mph</p>
+                </div>
+                <div  class="q2">
+                	<p class="q2txt">60mph</p>
+                </div>
+                <div onClick="onClick()" class="q2">
+                	<p class="q2txt">70mph</p>
+                </div>
+            </div>
+        </div>
+        <div class="q-three">
+       		<div class="q-container">
+                <div class="q3">
+                	<p class="q3txt">The Cooling System</p>
+                </div>
+                <div class="q3">
+                	<p class="q3txt">The Gearbox</p>
+                </div>
+                <div  onClick="onClick()" class="q3">
+                	<p class="q3txt">The Suspension</p>
+                </div>
+            </div>
+        </div>
+        <div class="q-four">
+       		<div class="q-container">
+                <div class="q4">
+                	<p class="q4txt">Get out of the car and look</p>
+                </div>
+                <div class="q4">
+                	<p class="q4txt">Check your interior Mirrors</p>
+                </div>
+                <div onClick="onClick()" class="q4">
+                	<p class="q4txt">Look in a shop window to view the reflection of traffic.</p>
+                </div>
+            </div>
+        </div>
+    	<div class="q-five">
+       		<div class="q-container">
+                <div class="q5">
+                	<p class="q5txt">Three seconds</p>
+                </div>
+                <div  onClick="onClick()" class="q5">
+                	<p class="q5txt">Four seconds</p>
+                </div>
+                <div class="q5">
+                	<p class="q5txt">None of the above</p>
+                </div>
+            </div>
+        </div>
+        
+        <video controls class="video" width="600" height="450" >
+    	<source src="video/pedestrians.mp4"/>
+    	</video>
+        
+           <div class="videoclick" onClick="hasClick()">
+           <p class="videoclicktxt"> Press Me <br> If you saw a Hazard  </p>
+           </div>
+           
+           <img class="arrowscore" src="img/arrow.png" alt="" />
+           
+           
+          <div class="score">
+        	<p class="scoretxt">You Scored: <a id="clicks">0</a>/5 - for the Questions</p>
+            <p class="PASS"> Your Have Passed </p>
+            <p class="FAIL"> You Have Failed </p>
+            
+        </div>
+        
+        <div class="scorehazard">
+        	<p class="scorehazardtxt">You Scored: <a id="flags">0</a>/4 - for the Hazard</p>
+             <p class="PASS1"> Your Have Passed </p>
+            <p class="FAIL1"> You Have Failed  </p>
+            <p class="CHEAT"> You Have Clicked to many times  </p>
+        </div>
+   			
+            <a href="theory-test.html">
+   			<img class="reset" src="img/restart1.png" alt="">
+            </a>
+            
+    <img class="carimg1" src="img/car.png" alt="">
+    <img class="carimg2" src="img/motorwayspeed.jpg" alt="">
+    <img class="carimg3" src="img/tyre.jpg" alt="">
+    <img class="carimg4" src="img/junction.jpg" alt="">
+    <img class="carimg5" src="img/raincars.jpg" alt="">
+    
+    
+
+
+</body>
+</html>
+
+
+   
